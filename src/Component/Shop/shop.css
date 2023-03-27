@@ -1,0 +1,6 @@
+.shop-container {
+  background-color: rgb(63, 111, 152);
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 5px;
+}

@@ -4,6 +4,7 @@ import Cart from '../Cart/Cart';
 
 import Product from '../Product/Product';
 import './shop.css'
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   const [products, setProducts] = useState([])
@@ -53,6 +54,7 @@ const Shop = () => {
       </div>
       <div className="cart-container">
         <Cart handleClearCart={handleClearCart} cart={cart}></Cart>
+        <Link to='/orders'><button>Review order</button></Link>
       </div>
     </div>
   );

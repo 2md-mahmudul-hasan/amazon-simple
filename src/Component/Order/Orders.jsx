@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Cart from '../Cart/Cart';
 import { Link, useLoaderData } from 'react-router-dom';
 import './order.css'
 import ReveiwItem from '../ReviewItem/ReveiwItem';
 import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
 import CheckOut from '../CheckOut/CheckOut';
+import { authContext } from '../../provider/ContextProvider';
 
 const Orders = () => {
+  const { user } = useContext(authContext)
   const SavedCart = useLoaderData()
   const [cart, setCart] = useState(SavedCart)
 
@@ -23,6 +25,7 @@ const Orders = () => {
 
   return (
     <div className='order'>
+
       <div className='review-container'>
         {cart.map(product => <ReveiwItem handleRemoveCart={handleRemoveCart} key={product.id} product={product}></ReveiwItem>)}
       </div>

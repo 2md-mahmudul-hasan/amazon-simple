@@ -26,15 +26,15 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn text-2xl text-red-400 "> Gmail</button>
+              <button className="btn text-2xl text-red-400 "> Login</button>
             </div>
             <hr></hr>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Sign up</button>
+              <button className="btn btn-primary">Continue With Google</button>
             </div>
 
             <label className="label">
-              <Link to="/signup" className="label-text-alt link link-hover">Not registered? please sign up</Link>
+              <Link to="/signup" className="label-text-alt text-red-400 link link-hover">Not registered? please sign up</Link>
             </label>
           </div>
 

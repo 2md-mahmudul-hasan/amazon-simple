@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 
 import {
@@ -15,6 +14,7 @@ import Inventory from './Component/Inventory/Inventory';
 import cartProductsLoader from './loaders/cartProductsLoaders';
 import Orders from './Component/Order/Orders';
 import CheckOut from './Component/CheckOut/CheckOut';
+import SignUp from './Component/SignUp/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path: '/signup',
+        element: <SignUp></SignUp>
       },
       {
         path: '/checkout',

@@ -10,9 +10,10 @@ const Header = () => {
 
       <div className="header-menu">
         <Link to="/">Shop</Link>
-        <Link to="orders">Order Review</Link>
-        <Link to="inventory">Manage Inventory</Link>
-        <Link to="login">Login</Link>
+        <Link to="/orders">Order Review</Link>
+        <Link to="/inventory">Manage Inventory</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Sign Up</Link>
       </div>
     </div>
   );

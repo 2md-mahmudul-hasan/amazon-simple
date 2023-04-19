@@ -6,4 +6,6 @@
   * daisyUI
   * fontawesome icon
   * context-api
+  * useLocation
+  * useNavigate
 
